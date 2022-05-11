@@ -1,0 +1,11 @@
+ChromePath = D:\\Selenium2022\\drivers\\chromedriver_win32\\chromedriver.exe
+ChromeKey = webdriver.chrome.driver
+
+IEpath = D:\\Selenium2022\\drivers\\IEDriverServer_x64_4.0.0\\IEDriverServer.exe
+IEKey = webdriver.ie.driver
+
+firefoxpath = D:\\Selenium2022\\drivers\\geckodriver.exe
+firefoxKey = webdriver.gecko.driver
+
+ReportPath = G:\\JAVA videos\\TestingReports\\HRM_Sprint1_dummy.html
+ScreenshotPath = G:\\JAVA videos\\Snap

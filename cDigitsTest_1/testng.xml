@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="cDigits_Automate_TCs">
+	<listeners>
+		<listener class-name="supportForTC.cDigitsTC_Listeners" />
+	</listeners>
+
+
+	<!--  <test name="AndroidPhone_UI">
+		<parameter name="noOfDevices" value="2" />
+		<parameter name="deviceName" value="LTE_MO_G5,LTE_MT_G5" />
+		<parameter name="UDID" value="ZY2245CNH3,ZY2244NCQ5" />
+		<parameter name="phoneType" value="MotoG5,MotoG5" />
+		<parameter name="network" value="LTE,LTE" />
+		<classes>
+			<class name="supportForTC.BeforeAfterTest" />
+
+			  <class name="cdigitsTC_UI.Calls_Tests" />
+			<class name="cdigitsTC_UI.DialPad_Tests" />
+			<class name="cdigitsTC_UI.Home_Tests" />
+			<class name="cdigitsTC_UI.Messages_Tests" />
+			<class name="cdigitsTC_UI.Contacts_Tests" />
+			<class name="cdigitsTC_UI.DrawerMenu_Tests" />
+			
+		</classes>
+	</test> -->
+	
+	
+	
+	<test name="AndroidTablet_UI">
+		<parameter name="noOfDevices" value="1" />
+		<parameter name="deviceName" value="LTE_MO_G5" />
+		<parameter name="UDID" value="55ca50c3"/>
+		<parameter name="phoneType" value="MotoG5" />
+		<parameter name="network" value="LTE" />
+		<classes>
+			<class name="supportForTC.BeforeAfterTest" />
+
+		<!--	<class name="cdigitsTC_UI.Tablet_Calls_Tests" />
+			<class name="cdigitsTC_UI.Tablet_DialPad_Tests" />  
+			<class name="cdigitsTC_UI.Tablet_Home_Tests" />
+			<class name="cdigitsTC_UI.Tablet_Messages_Tests" />  -->
+			<class name="cdigitsTC_UI.Tablet_Contacts_Tests" > 
+			<methods>
+			
+			<include name="UI_46103_CheckTabSyncContactTab" />
+			
+				
+			</methods>
+		
+			
+			</class>
+			
+			
+	<!--<class name="cdigitsTC_UI.Tablet_DrawerMenu_Tests" />
+			
+			
+				  -->
+			
+			
+		</classes>
+	</test>
+
+
+
+	<!-- <test name="AndroidPhone_Contacts">
+		<parameter name="noOfDevices" value="2" />
+		<parameter name="deviceName" value="LTE_MO_G5" />
+		<parameter name="UDID" value="ZY2245CNH3" />
+		<parameter name="phoneType" value="MotoG5" />
+		<parameter name="network" value="LTE" />
+		<classes>
+			<class name="supportForTC.BeforeAfterTest" />
+			
+			 <class name="cDigitsTC_Contacts.Contact_Test" />
+		</classes>
+	</test> -->
+
+
+
+	<!--   <test name="AndroidPhone_Misc">
+		<parameter name="noOfDevices" value="2" />
+		<parameter name="deviceName" value="LTE_MO_G5,LTE_MT_G5" />
+		<parameter name="UDID" value="ZY2245CNH3,ZY2244NCQ5" />
+		<parameter name="phoneType" value="MotoG5,MotoG5" />
+		<parameter name="network" value="LTE,LTE" />
+		<classes>
+			<class name="supportForTC.BeforeAfterTest" />
+			<class name="cDigitsTC_Misc.Misc_TEST_AndroidPhone" >	
+			
+			<methods>
+			
+			<include name="Misc_92_CheckSearchContactByFirstName" />
+			<include name="Misc_93_CheckSearchContactByLastName" />
+			<include name="Misc_94_CheckSearchContactByNumber" />
+				
+			</methods>
+			
+			</class>
+			
+					
+		</classes>
+	</test> 
+	
+	 <test name="AndroidTablet_Misc">
+		<parameter name="noOfDevices" value="1" />
+		<parameter name="deviceName" value="LTE_MO_G5" />
+		<parameter name="UDID" value="55ca50c3" />
+		<parameter name="phoneType" value="MotoG5" />
+		<parameter name="network" value="LTE" />
+		<classes>
+			<class name="supportForTC.BeforeAfterTest" />
+			
+			<class name="cDigitsTC_Misc.Misc_TEST_Tablet" >
+			
+			<methods>
+			
+			<include name="Misc_97_CheckTabSearchContactByNumber" />
+			
+				
+			</methods>
+			
+			</class>
+						
+		</classes>
+	</test> -->
+
+	<!--  <test name="AndroidPhone_Messaging_LTE_LTE_1to1_SameOS">
+		<parameter name="noOfDevices" value="2" />
+		<parameter name="deviceName" value="LTE_MO_G5,LTE_MT_G5" />
+		<parameter name="UDID" value="ZY2245CNH3,ZY2244NCQ5" />
+		<parameter name="phoneType" value="MotoG5,MotoG5" />
+		<parameter name="network" value="LTE,LTE" />
+		<classes>
+			<class name="supportForTC.BeforeAfterTest" />
+			<class name="cDigitsTC_Messaging.LTE_LTE_1to1_SameOS" />
+		</classes>
+	</test>-->
+	
+	
+	<!--  <test name="AndroidPhone_Messaging">
+		<parameter name="noOfDevices" value="2" />
+		<parameter name="deviceName" value="LTE_MO_G5,LTE_MT_G5" />
+		<parameter name="UDID" value="ZY2245CNH3,ZY2244NCQ5" />
+		<parameter name="phoneType" value="MotoG5,MotoG5" />
+		<parameter name="network" value="LTE,LTE" />
+		<classes>
+			<class name="supportForTC.BeforeAfterTest" />
+			<class name="cDigitsTC_Messaging.MessagingTC_AndroidPhone" />
+		</classes>
+	</test> -->
+	
+	
+	
+	
+</suite> <!-- Suite -->

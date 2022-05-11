@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [cDigits_Automate_TCs]">
+  <listeners>
+    <listener class-name="supportForTC.cDigitsTC_Listeners"/>
+  </listeners>
+  <test thread-count="5" name="AndroidTablet_UI(failed)">
+    <parameter name="noOfDevices" value="1"/>
+    <parameter name="phoneType" value="MotoG5"/>
+    <parameter name="deviceName" value="LTE_MO_G5"/>
+    <parameter name="UDID" value="55ca50c3"/>
+    <parameter name="network" value="LTE"/>
+    <classes>
+      <class name="cdigitsTC_UI.Tablet_Contacts_Tests">
+        <methods>
+          <include name="runAfterMethod"/>
+          <include name="UI_46103_CheckTabSyncContactTab"/>
+          <include name="runBeforeMethod"/>
+        </methods>
+      </class> <!-- cdigitsTC_UI.Tablet_Contacts_Tests -->
+    </classes>
+  </test> <!-- AndroidTablet_UI(failed) -->
+</suite> <!-- Failed suite [cDigits_Automate_TCs] -->

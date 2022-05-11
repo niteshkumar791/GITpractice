@@ -1,0 +1,7 @@
+package Apr2022POMsessions.Apr2022POMSessions;
+
+public class App {
+  public static void main(String[] args) {
+    System.out.println("Hello World!");
+  }
+}
